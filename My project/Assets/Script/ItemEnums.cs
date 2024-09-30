@@ -48,13 +48,14 @@ public class ItemEnums
         Plate       //판금
     }
 
-    public class Weapon : IItem
+    //어픽스는 어픽스 스트럭쳐 혹은 클래스 작업필요
+    public class Weapon : ItemBase
     {
         public string ItemName { get; private set; }
         public int ItemID { get; private set; }
         public string ItemType { get; private set; }
         public string ItemEffect { get; private set; }
-        public string ItemAffixes { get; private set; } 
+        public string ItemAffixes { get; private set; }     
         public WeaponTypes WeaponType { get; private set; }
         public EquipParts EquipPart { get; private set; }
 
